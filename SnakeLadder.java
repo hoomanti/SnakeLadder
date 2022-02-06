@@ -32,6 +32,12 @@ public class SnakeLadder {
 				position = 0;
 				System.out.println("Start Again");
 			}
+
+			if(position > 100) {
+				System.out.println("Can not move above 100, roll again");
+				position = position - roll - roll;
+				System.out.println("Your position = " + position);
+			}
 		}
 	}
 }
