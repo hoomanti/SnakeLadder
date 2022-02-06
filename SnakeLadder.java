@@ -1,10 +1,12 @@
 public class SnakeLadder {
 
 	static int position = 0;
+	static int noOfRoll = 0;
 	public static void main(String args[]) {
 
 		while(position < 100) {
 			int roll = (int)(Math.floor(Math.random() * 10 ) % 6 ) +1;
+			noOfRoll = noOfRoll + 1;
 			System.out.println("ROLL = " + roll);
 
 			int option = (int)(Math.floor(Math.random() * 10 ) % 3 ) + 1;
@@ -39,5 +41,6 @@ public class SnakeLadder {
 				System.out.println("Your position = " + position);
 			}
 		}
+		System.out.println("Number of total roll = " + noOfRoll);
 	}
 }
